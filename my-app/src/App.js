@@ -1,21 +1,19 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Specials from './components/Specials';
-import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
-import About from './components/About';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Booking from './pages/Booking';
+import Confirmation from './pages/Confirmation';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Specials />
-      <Testimonials />
-      <About />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/confirmed" element={<Confirmation />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }
