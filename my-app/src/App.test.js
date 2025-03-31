@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// src/App.test.js
+jest.mock('react-router-dom', () => ({
+  MemoryRouter: ({ children }) => <div>{children}</div>,
+}));
 
-test('renders learn react link', () => {
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+
+test("renders App component without crashing", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Little Lemon/i)).toBeInTheDocument();
 });

@@ -1,23 +1,18 @@
-import { useReducer } from "react";
-import Header from "../components/Header";
-import BookingForm from "../components/BookingForm";
-import Footer from "../components/Footer";
-import { updateTimes, initializeTimes } from "../utils/temp";
+import React from 'react';
+import Header from '../components/Header';
+import BookingForm from '../components/BookingForm';
+import Footer from '../components/Footer';
 
-const BookingPage = () => {
-  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
-
-  const handleSubmit = () => {
-    // Add navigation logic here if needed
-  };
-
+function Booking({ availableTimes, dispatch, submitForm }) {
   return (
     <>
       <Header />
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} onSubmit={handleSubmit} />
+      <main>
+        <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
+      </main>
       <Footer />
     </>
   );
-};
+}
 
-export default BookingPage;
+export default Booking;

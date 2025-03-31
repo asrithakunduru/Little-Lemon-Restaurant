@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function SpecialCard({ title, price, description, image }) {
   return (
@@ -10,7 +12,8 @@ export default function SpecialCard({ title, price, description, image }) {
           <span className="price">{price}</span>
         </div>
         <p>{description}</p>
-        <a href="#" className="order-link">Order a delivery 🚚</a>
+        <Link to="/" className="order-link">Order a delivery 🚚</Link>
+
       </div>
     </div>
   );

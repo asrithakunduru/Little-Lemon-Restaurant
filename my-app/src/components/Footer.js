@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
@@ -11,12 +13,13 @@ export default function Footer() {
         <div>
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Order Online</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/menu">Menu</Link></li>
+          <li><Link to="/booking">Reservations</Link></li>
+          <li><Link to="/order">Order Online</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+
         </div>
         <div>
           <h4>Contact</h4>
