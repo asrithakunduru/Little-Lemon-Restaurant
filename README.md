@@ -12,6 +12,8 @@ This Project is a part of Meta Front-End Developer Professional Certificate. The
 
 ![image](https://github.com/user-attachments/assets/c6ae2474-4a3b-4b4b-a048-3d253d808c10)
 
+This project was created as part of a Coursera course assignment. Not intended for reuse.
+
 
 
 
