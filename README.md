@@ -1,4 +1,4 @@
-This Project is a part of Meta Front-End Developer Professional Certificate. The main focus of this website is the booking page.
+This Project is a part of Meta Front-End Developer Professional Certificate. The main focus of this website is the booking page. This is a responsive design that works for mobile devices also.
 
 ![image](https://github.com/user-attachments/assets/6495756e-1c7b-4c92-a954-440bb287c960)
 
@@ -9,6 +9,9 @@ This Project is a part of Meta Front-End Developer Professional Certificate. The
 ![image](https://github.com/user-attachments/assets/df5042d6-13f2-49e9-9483-fb7158197c1e)
 
 ![image](https://github.com/user-attachments/assets/974b12c4-f0e7-4a5a-bd4f-8b275c82580a)
+
+![image](https://github.com/user-attachments/assets/c6ae2474-4a3b-4b4b-a048-3d253d808c10)
+
 
 
 
